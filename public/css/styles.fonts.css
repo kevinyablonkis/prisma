@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Sansation-R';
+    src: url(../assets/fonts/Sansation_Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Sansation-I';
+    src: url(../assets/fonts/Sansation_Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Sansation-B';
+    src: url(../assets/fonts/Sansation_Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Sansation-L';
+    src: url(../assets/fonts/Sansation_Light.ttf);
+}

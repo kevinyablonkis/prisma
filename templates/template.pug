@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../css/normalize.css")
+        link(rel="stylesheet", href="../css/styles.fonts.css")
+        link(rel="stylesheet", href="../css/styles.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Material+Icons+Round")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+        title Prisma
+    body
+        block header
+            header.header
+                nav.header__nav
+                    div.header__nav__lenguaje_and_help
+                        button.icon: span(class="material-icons-round") help_outline
+                        button.icon: span(class="material-icons-round") language
+                        a.icon(href=""): span(class="material-icons-round") person
+                    a.logo(href="/") PRISMA
+                    button.icon#btnOpen
+                        span(class="material-icons-round" onclick="MenuBurger()") menu
+                    ul.header__nav__list#headerNavList
+                        button.icon#btnClose
+                            span(class="material-icons-round" onclick="MenuBurger()") close
+                        li: a(href="/model-cars") Model Cars
+                        li: a(href="/spare-parts") Spare Parts
+                        li: a(href="/president-founder") Our Founder
+        block main
+
+        block footer
+            footer.footer
+                nav.footer__nav
+                    ul.footer__nav__list
+                        li: a(href="") Cookie Settings
+                        li: a(href="") Privacy & Legal
+                        li: a(href="") Terms & Conditions
+                    p Prisma © 2023
+        block script
+            script(src="../js/script.js")
+            script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+            script.
+                let swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 30,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    });

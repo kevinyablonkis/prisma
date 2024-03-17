@@ -1,0 +1,75 @@
+extends ../templates/template.pug
+
+block main
+    section.card_model.card_model__img_ANGEL
+        div.card_model__container
+            div.card_model__container__info
+                h1 ANGEL
+                p Where Grace Meets Speed.
+            a.btn.btn_buy(href="") Buy
+    section.chacarters
+        h2 CHARACTERISTICS
+        div.chacarters__container
+            div.chacarters__container__card
+                h3 Maximum Speed
+            div.chacarters__container__card
+                h3 0 to 100 km/h
+            div.chacarters__container__card
+                h3 Horsepower
+    section.full_description
+        h2 FULL DESCRIPTION
+        div.full_description__info
+            h3 Engine
+            ul.full_description__list
+                li: p Engine type: Twin-turbocharged V8
+                li: p Displacement: 3.8 liters
+                li: p Power: Approximately 562 horsepower (in standard versions)
+            h3 Performance
+            ul.full_description__list
+                li: p 0 to 100 km/h acceleration: Around 3.2 seconds
+                li: p Top speed: Over 320 km/h
+            h3 Transmission
+            ul.full_description__list
+                li: p Transmission type: 7-speed dual-clutch automatic
+            h3 Chassis and Suspension
+            ul.full_description__list
+                li: p Chassis configuration: Carbon fiber monocoque
+                li: p Front and rear suspension: Double-wishbone suspension
+                li: p Electrically assisted power steering
+            h3 Brakes
+            ul.full_description__list
+                li: p Brake type: Ventilated and perforated disc brakes
+                li: p Anti-lock Braking System (ABS) and Electronic Brakeforce Distribution (EBD)
+            h3 Tires
+            ul.full_description__list
+                li: p Front tires: Model-specific size and specifications
+                li: p Rear tires: Model-specific size and specifications
+            h3 Dimensions
+            ul.full_description__list
+                li: p Overall length: Approximately XXXX mm
+                li: p Overall width: Approximately XXXX mm
+                li: p Overall height: Approximately XXXX mm
+                li: p Wheelbase: Approximately XXXX mm
+            h3 Weight
+            ul.full_description__list
+                li: p Curb weight: Approximately XXXX kg
+    section.color_cars
+        h1 COLORS
+        div.color_cars__type
+            div.color_car__type__color
+            div.color_car__type__color
+            div.color_car__type__color
+            div.color_car__type__color
+            div.color_car__type__color
+        div.color_cars__car
+            div#mySwiper(class="swiper mySwiper")
+                div(class="swiper-wrapper")
+                    div(class="swiper-slide") Slide 1
+                    div(class="swiper-slide") Slide 2
+                    div(class="swiper-slide") Slide 3
+                    div(class="swiper-slide") Slide 4
+                    div(class="swiper-slide") Slide 5
+                div(class="swiper-pagination")
+    section.are_you_ready
+        h2 Are you ready for ANGEL?
+        button.btn.btn_buy Yes
